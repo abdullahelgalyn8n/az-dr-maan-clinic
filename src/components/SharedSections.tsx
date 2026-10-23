@@ -44,42 +44,42 @@ export const ROUTE_META: Record<
 > = {
   '/': {
     title: 'الصفحة الرئيسية',
-    slugDisplay: 'dr-maanahmed.online/',
+    slugDisplay: 'az-dr-maan-clinic.pages.dev/',
     breadcrumb: 'الرئيسية',
   },
   '/why-me': {
     title: 'لماذا أنا؟ — الخبرة والمؤهلات',
-    slugDisplay: 'dr-maanahmed.online/why-me',
+    slugDisplay: 'az-dr-maan-clinic.pages.dev/why-me',
     breadcrumb: 'لماذا أنا؟',
   },
   '/services': {
     title: 'الخدمات والجلسات العلاجية',
-    slugDisplay: 'dr-maanahmed.online/services',
+    slugDisplay: 'az-dr-maan-clinic.pages.dev/services',
     breadcrumb: 'الخدمات',
   },
   '/products': {
     title: 'المنتجات والباقات والأدلة العلاجية',
-    slugDisplay: 'dr-maanahmed.online/products',
+    slugDisplay: 'az-dr-maan-clinic.pages.dev/products',
     breadcrumb: 'المنتجات والباقات',
   },
   '/pricing': {
     title: 'الأسعار وخيارات الدفع',
-    slugDisplay: 'dr-maanahmed.online/pricing',
+    slugDisplay: 'az-dr-maan-clinic.pages.dev/pricing',
     breadcrumb: 'الأسعار',
   },
   '/faq': {
     title: 'الأسئلة الشائعة ومعلومات الطوارئ',
-    slugDisplay: 'dr-maanahmed.online/faq',
+    slugDisplay: 'az-dr-maan-clinic.pages.dev/faq',
     breadcrumb: 'الأسئلة الشائعة',
   },
   '/booking': {
     title: 'إتمام الحجز وتأكيد الموعد',
-    slugDisplay: 'dr-maanahmed.online/booking',
+    slugDisplay: 'az-dr-maan-clinic.pages.dev/booking',
     breadcrumb: 'إتمام الحجز',
   },
   '/contact': {
     title: 'اتصل بنا وقنوات التواصل',
-    slugDisplay: 'dr-maanahmed.online/contact',
+    slugDisplay: 'az-dr-maan-clinic.pages.dev/contact',
     breadcrumb: 'اتصل بنا',
   },
 };
