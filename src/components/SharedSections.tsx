@@ -84,71 +84,7 @@ export const ROUTE_META: Record<
   },
 };
 
-export const PageUrlBanner: React.FC<{
-  currentRoute: RoutePath;
-  onNavigate: (route: RoutePath) => void;
-}> = ({ currentRoute, onNavigate }) => {
-  const [copied, setCopied] = useState(false);
-  const meta = ROUTE_META[currentRoute];
-
-  const handleCopyUrl = () => {
-    const url = `${window.location.origin}${currentRoute}`;
-    if (navigator.clipboard && navigator.clipboard.writeText) {
-      navigator.clipboard.writeText(url).catch(() => {});
-    }
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
-  };
-
-  return (
-    <div className="bg-[#EEF6F6] border-b border-[#C5DFDF]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2.5 flex flex-wrap items-center justify-between gap-3 text-xs">
-        <div className="flex items-center gap-2 text-slate-800 font-semibold">
-          <a
-            href="/"
-            onClick={(e) => {
-              e.preventDefault();
-              onNavigate('/');
-            }}
-            className="text-[#145A5D] hover:underline font-bold"
-          >
-            الرئيسية
-          </a>
-          {currentRoute !== '/' && (
-            <>
-              <span aria-hidden="true" className="text-slate-500">
-                /
-              </span>
-              <span className="text-slate-900 font-extrabold">{meta.breadcrumb}</span>
-            </>
-          )}
-          <span aria-hidden="true" className="text-slate-400 hidden sm:inline">
-            ·
-          </span>
-          <span className="text-slate-700 hidden sm:inline">{meta.title}</span>
-        </div>
-
-        <div className="flex items-center gap-2">
-          <div
-            dir="ltr"
-            className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-white border border-slate-300 text-slate-800 font-mono text-[11px]"
-          >
-            <Link2 className="w-3.5 h-3.5 text-[#145A5D]" />
-            <span>{meta.slugDisplay}</span>
-          </div>
-          <button
-            type="button"
-            onClick={handleCopyUrl}
-            className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-[#145A5D] hover:bg-[#0F4547] text-white font-bold text-[11px] transition-colors cursor-pointer whitespace-nowrap shrink-0"
-          >
-            {copied ? <Check className="w-3.5 h-3.5" /> : <Copy className="w-3.5 h-3.5" />}
-            <span>{copied ? 'تم نسخ الرابط' : 'نسخ رابط الصفحة'}</span>
-          </button>
-        </div>
-      </div>
-    </div>
-  );
-};
+export const PageUrlBanner: React.FC<any> = () => null;
 
 export const WhyMeSection: React.FC<{
   onNavigate?: (route: RoutePath) => void;
